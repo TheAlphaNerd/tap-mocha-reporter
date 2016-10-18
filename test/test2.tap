@@ -1,0 +1,73 @@
+$ tools/test.py -p tap --logfile test.tap --mode=release
+TAP version 13
+1..1320
+ok 1 parallel/test-arm-math-exp-regress-1376
+  ---
+  duration_ms: 0.109
+  ...
+not ok 2 parallel/test-assert
+  ---
+  duration_ms: 0.132
+  message: this could be parsed from the traceback?
+  severity: fail
+  stack: |-
+    
+    assert.js:85
+      throw new assert.AssertionError({
+      ^
+    AssertionError: Got unwanted exception..
+        at _throws (assert.js:350:5)
+        at Function.assert.doesNotThrow (assert.js:368:3)
+        at Object.<anonymous> (/Users/jbergstroem/Work/node/src/test/parallel/test-assert.js:88:8)
+        at Module._compile (module.js:573:32)
+        at Object.Module._extensions..js (module.js:582:10)
+        at Module.load (module.js:490:32)
+        at tryModuleLoad (module.js:449:12)
+        at Function.Module._load (module.js:441:3)
+        at Module.runMain (module.js:607:10)
+        at run (bootstrap_node.js:382:7)
+  ...
+ok 3 parallel/test-assert-typedarray-deepequal
+  ---
+  duration_ms: 0.551
+  ...
+ok 4 parallel/test-async-wrap-check-providers
+  ---
+  duration_ms: 0.199
+  ...
+ok 5 parallel/test-async-wrap-disabled-propagate-parent
+  ---
+  duration_ms: 0.135
+  ...
+ok 6 parallel/test-async-wrap-post-did-throw
+  ---
+  duration_ms: 0.134
+  ...
+ok 7 parallel/test-async-wrap-propagate-parent
+  ---
+  duration_ms: 0.129
+  ...
+ok 8 parallel/test-async-wrap-throw-from-callback
+  ---
+  duration_ms: 0.298
+  ...
+ok 9 parallel/test-async-wrap-throw-no-init
+  ---
+  duration_ms: 0.109
+  ...
+ok 10 parallel/test-async-wrap-uid
+  ---
+  duration_ms: 0.107
+  ...
+ok 11 parallel/test-bad-unicode
+  ---
+  duration_ms: 0.109
+  ...
+ok 12 parallel/test-beforeexit-event
+  ---
+  duration_ms: 0.105
+  ...
+ok 13 parallel/test-beforeexit-event-exit
+  ---
+  duration_ms: 0.112
+  ...

@@ -1,0 +1,21 @@
+1..2
+ok 1 parallel/test-arm-math-exp-regress-1376
+  ---
+  duration_ms: 0.102
+  ...
+not ok 2 parallel/test-npm-install
+  ---
+  duration_ms: 0.858
+  error:
+    message: OMG I Failure
+    stack: |
+      assert.js:85
+        throw new assert.AssertionError({
+        ^
+      AssertionError: npm install should run without an error
+          at ChildProcess.handleExit (/Users/thealphanerd/code/node/master/test/parallel/test-npm-install.js:48:10)
+          at ChildProcess.<anonymous> (/Users/thealphanerd/code/node/master/test/common.js:416:15)
+          at emitTwo (events.js:106:13)
+          at ChildProcess.emit (events.js:191:7)
+          at Process.ChildProcess._handle.onexit (internal/child_process.js:215:12)
+  ...
